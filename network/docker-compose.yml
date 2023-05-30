@@ -15,10 +15,10 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.admin.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.localGoverment.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/237a18bbf51c50ab9cc634be507873b093c117cd21e30300153610077adb2989_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/404b60bf31107d35424b93086cb0c76b3fc2e85cbc44d2121289d94e87ba1c66_sk
     ports:
       - "7054:7054"
-    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org1.localGoverment.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/237a18bbf51c50ab9cc634be507873b093c117cd21e30300153610077adb2989_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org1.localGoverment.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/404b60bf31107d35424b93086cb0c76b3fc2e85cbc44d2121289d94e87ba1c66_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/org1.localGoverment.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.admin.com
