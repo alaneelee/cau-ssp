@@ -36,4 +36,5 @@ docker exec -e "CORE_PEER_LOCALMSPID=Org2MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/h
 sleep 5
 
 # Join peer0.org3.constructionCompany.com to the channel.
+# Nothing
 docker exec -e "CORE_PEER_LOCALMSPID=Org3MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org3.constructionCompany.com/msp" peer0.org3.constructionCompany.com peer channel join -b /etc/hyperledger/configtx/ssp.block
